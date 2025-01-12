@@ -23,11 +23,12 @@ src_install() {
 	exeinto /opt/Unciv
 	insinto /opt/Unciv
 	doexe Unciv.jar
+	doexe ${FILESDIR}/Unciv.sh
 	doins ${FILESDIR}/icon.png
-	make_desktop_entry "java -jar /opt/Unciv/Unciv.jar" Unciv /opt/Unciv/icon.png Game
+	domenu ${FILESDIR}/unciv.desktop
 }
 
 pkg_prerm() {
 	rm -rf /opt/Unciv
-	rm "/usr/share/applications/java-unciv.desktop"
+	rm "/usr/share/applications/unciv.desktop"
 }

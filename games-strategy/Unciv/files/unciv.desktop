@@ -1,0 +1,11 @@
+[Desktop Entry]
+Exec=/opt/Unciv/Unciv.sh
+Icon=/opt/Unciv/icon.sh
+Name=Unciv
+NoDisplay=false
+StartupNotify=true
+Terminal=false
+Type=Application
+Categories=Game;StrategyGame;
+Comment=Turn-based historical strategy game, open source remake of Civ V
+Keywords=Game;Civilization;Strategy;Turn-Based;Unciv;unciv
